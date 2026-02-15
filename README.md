@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boutique Store - $500 Budget
+
+A boutique e-commerce application demonstrating a mid-tier budget implementation with Next.js and simulated Shopify Lite API performance.
+
+## Overview
+
+- **Budget**: $500
+- **Target Business**: Local business / Boutique
+- **Max Products**: 200-1000
+- **Performance**: 200ms artificial delay (mid-tier)
+
+## Features
+
+- Product catalog with 15 boutique items
+- Shopping cart with add/remove/update functionality
+- Checkout flow with shipping form
+- Order management system
+- Admin dashboard with simple analytics
+- Order status tracking (pending → processing → shipped → delivered)
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: CSS with CSS Variables
+- **State**: Server Actions + Cookie-based persistence
+- **Performance**: 200ms artificial delay to simulate mid-tier hosting
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Run development server
 pnpm dev
-# or
-bun dev
+
+# Build for production
+pnpm build
+
+# Start production server
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the store.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Description |
+|-------|-------------|
+| `/` | Product catalog |
+| `/product/[id]` | Product detail page |
+| `/cart` | Shopping cart |
+| `/checkout` | Checkout flow |
+| `/checkout/success` | Order confirmation |
+| `/admin` | Analytics dashboard |
 
-## Learn More
+## Performance Characteristics
 
-To learn more about Next.js, take a look at the following resources:
+This tier intentionally simulates slower performance with:
+- 200ms delay on all page loads
+- Demonstrates performance difference from higher budget tiers
+- Expected page load: ~400-600ms (with delay)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cost Breakdown
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Item | Cost |
+|------|------|
+| Development | ~$350 |
+| Monthly Hosting | ~$20/mo |
+| Shopify Lite | ~$9/mo |
+| **Total First Year** | ~$500 |
+| **Monthly Cost** | ~$29/mo |
 
-## Deploy on Vercel
+## Best For
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Local boutiques
+- Small retail stores
+- Businesses testing e-commerce
+- Those wanting Shopify without full Shopify costs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
