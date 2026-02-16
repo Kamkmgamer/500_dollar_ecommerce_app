@@ -6,6 +6,9 @@ import Cart from "@/components/Cart";
 export const metadata: Metadata = {
   title: "Artisan Collective | Curated Fashion & Artisan Home Goods",
   description: "Discover handpicked fashion, accessories, and home goods crafted by artisans around the world. Timeless pieces for the modern lifestyle.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
